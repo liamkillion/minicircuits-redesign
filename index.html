@@ -4,55 +4,247 @@
     <meta charset="utf-8">
     <title>MiniCircuits</title>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <div class="ui grid">
       <div class="ui row">
-        <div class="ui container">
-          <div class="six wide column">
-            <img src="images/header_logo.png" alt="">
-          </div>
-          <div class="four wide column"></div>
-          <div class="six wide column">
-            <div class="ui search">
-              <div class="ui icon input">
-                <input class="prompt" type="text" placeholder="Model Number Search">
-                <i class="search icon"></i>
-              </div>
-              <div class="results"></div>
+        <div class="six wide column">
+          <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="four wide column"></div>
+        <div class="six wide column">
+          <div class="ui search" style="margin-top:10%;margin-left:50%">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Model Number Search">
+              <i class="search icon"></i>
             </div>
+            <div class="results"></div>
           </div>
         </div>
       </div>
       <div class="ui row">
-        <div class="ui container">
-          <div class="six wide column">
-            <h3 class="ui header">LAT-0+ FXD ATTEN / SURF MT / RoHS </h3>
-            <img src="images/MMM168.png" alt="">
-            <img src="images/ROHS.png" alt="">
-          </div>
-          <div class="six wide column">
-            <div class="ui tabular menu">
-              <div class="item" data-tab="tab-name">Tab Name</div>
-              <div class="item" data-tab="tab-name2">Tab Name 2</div>
-            </div>
-            <div class="ui tab" data-tab="tab-name">
-              <!-- Tab Content !-->
-            </div>
-            <div class="ui tab" data-tab="tab-name2">
-              <!-- Tab Content !-->
-            </div>
-          </div>
-          <div class="four wide column">
-
-          </div>
-
+        <div class="one wide column"></div>
+        <div class="four wide column">
+          <br>
+          <h3 class="ui header">LAT-0+ FXD ATTEN / SURF MT / RoHS </h3>
+          <img src="images/MMM168.png" alt="">
+          <img src="images/ROHS.png" alt="" style="width:5em;height:5em">
         </div>
-
+        <div class="six wide column">
+          <div class="ui top attached tabular menu" style="width:90%">
+            <div class="item active" data-tab="vital">Tab Name</div>
+            <div class="item" data-tab="schematics">Tab Name 2</div>
+            <div class="item" data-tab="additional">Tab Name 3</div>
+          </div>
+          <div class="ui bottom attached active tab segment" style="width:90%" data-tab="vital">
+            <h3 class="ui header">Vital Information</h3>
+            <table class="ui celled structured table">
+              <thead>
+                <tr>
+                  <th>Quality</th>
+                  <th>Included?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Category:</td>
+                  <td>RF Attenuator</td>
+                </tr>
+                <tr>
+                  <td>RoHS Certified?</td>
+                  <td class="center aligned">
+                    <i class="large green checkmark icon"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Comes Mounted on Breadboard?</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Surface Mount?</td>
+                  <td class="center aligned">
+                    <i class="large green checkmark icon"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Connector</td>
+                  <td class="center aligned">
+                    <i class="large green checkmark icon"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Plug In?</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Die?</td>
+                  <td class="center aligned">
+                    <i class="large green checkmark icon"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ui bottom attached tab segment" style="width:90%" data-tab="schematics">
+            <h3 class="ui header">Schematics</h3>
+            <div class="ui styled accordion">
+              <div class="active title">
+                <i class="dropdown icon"></i>
+                DataSheet
+              </div>
+              <div class="active content">
+                <a href="#" target="_blank">View Full Datasheet</a><br>
+                <a href="#" target="_blank">View Data Only</a><br>
+                <a href="#" target="_blank">View DGraphs Only</a><br>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                S-PARAMETERS
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View S-PARAMETERS</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                Case Style - MM168
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View Case Style Information</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                T & R - F8
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View T&R - F8 Information</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                PCB Layout
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View PCB Layout Information</a>
+              </div>
+            </div>
+          </div>
+          <div class="ui bottom attached tab segment" style="width:90%" data-tab="additional">
+            <h3 class="ui header">Additional Information</h3>
+            <div class="ui styled accordion">
+              <div class="active title">
+                <i class="dropdown icon"></i>
+                Export Info
+              </div>
+              <div class="active content">
+                <a href="#" target="_blank">View Export Info</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                ROHS
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View RoHS Documentation</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                General Technical Notes
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View General Technical Notes</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                Application Notes
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View Application Notes</a>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                Tools
+              </div>
+              <div class="content">
+                <a href="#" target="_blank">View Tools Information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column">
+            <table class="ui celled table">
+              <thead>
+                <tr>
+                  <th># of Units</th>
+                  <th>Price Per Unit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1-10</td>
+                  <td>$4.99</td>
+                </tr>
+                <tr>
+                  <td>11-50</td>
+                  <td>$4.89</td>
+                </tr>
+                <tr>
+                  <td>51-100</td>
+                  <td>$4.79</td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                  <td>Total:</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="ui right labeled input">
+                      <input type="text" placeholder="Enter number of units..">
+                      <div class="ui basic label">
+                        units
+                      </div>
+                    </div>
+                  </td>
+                  <td>$2155.50</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <button class="ui button" style="margin-left:75%"> Add To Cart</button> -->
+          </div>
+        </div>
+        <div class="ui row">
+          <div class="one wide column"></div>
+          <div class="seven wide column">
+            <h3 class="ui header">Related/Complementary Items</h3>
+            <div class="ui segment" style="border: 3px solid black">
+              <a href="#" target="_blank"><img src="images/TB-DEFAULT.png"></a>
+              <a href="#" target="_blank"><img src="images/TB-DEFAULT.png"></a>
+              <div class="ui image">
+                <a href="#">
+                  <h3 class="ui header">Click Here for More Products</h3>
+                  <br>
+                  <i class="arrow right"></i>
+                </a>
+            </div>
+            </div>
+          </div>
+          <div class="one wide column"></div>
+          <div class="two wide column">
+            <button class="ui button">Click Here to contact us about this product</button>
+          </div>
+          <div class="two wide column">
+            <button class="ui button">Shipping Outside the US? Click Here</button>
+          </div>
+          <div class="two wide column">
+            <button class="ui button">Add To Cart</button>
+          </div>
+          <div class="one wide column"></div>
+        </div>
+        <div class="one wide column"></div>
       </div>
     </div>
-
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
